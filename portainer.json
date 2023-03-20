@@ -1,0 +1,165 @@
+{
+      "type": 1,
+      "title": "Ubuntu",
+      "description": "Debian-based Linux operating system",
+      "categories": ["operating-system"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ubuntu.png",
+      "image": "ubuntu:latest",
+      "interactive": true,
+      "command": "/bin/bash"
+    },
+    {
+      "type": 1,
+      "title": "NodeJS",
+      "description": "JavaScript-based platform for server-side and networking applications",
+      "categories": ["development"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/node.png",
+      "image": "node:latest",
+      "interactive": true,
+      "command": "/bin/bash"
+    },
+    {
+      "type": 1,
+      "title": "Nginx",
+      "description": "High performance web server",
+      "categories": ["webserver"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png",
+      "image": "nginx:latest",
+      "ports": ["80/tcp", "443/tcp"],
+      "volumes": [
+        {
+          "container": "/etc/nginx"
+        },
+        {
+          "container": "/usr/share/nginx/html"
+        }
+      ]
+    },
+{
+      "type": 1,
+      "title": "MariaDB",
+      "description": "Performance beyond MySQL",
+      "categories": ["database"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mariadb.png",
+      "image": "mariadb:latest",
+      "env": [
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "label": "Root password"
+        }
+      ],
+      "ports": ["3306/tcp"],
+      "volumes": [
+        {
+          "container": "/var/lib/mysql"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "PostgreSQL",
+      "description": "The most advanced open-source database",
+      "categories": ["database"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
+      "image": "postgres:latest",
+      "env": [
+        {
+          "name": "POSTGRES_USER",
+          "label": "Superuser"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "label": "Superuser password"
+        }
+      ],
+      "ports": ["5432/tcp"],
+      "volumes": [
+        {
+          "container": "/var/lib/postgresql/data"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "Mongo",
+      "description": "Open-source document-oriented database",
+      "categories": ["database"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mongo.png",
+      "image": "mongo:latest",
+      "ports": ["27017/tcp"],
+      "volumes": [
+        {
+          "container": "/data/db"
+        }
+      ]
+    },
+{
+      "type": 1,
+      "title": "MariaDB",
+      "description": "Performance beyond MySQL",
+      "categories": ["database"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mariadb.png",
+      "image": "mariadb:latest",
+      "env": [
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "label": "Root password"
+        }
+      ],
+      "ports": ["3306/tcp"],
+      "volumes": [
+        {
+          "container": "/var/lib/mysql"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "PostgreSQL",
+      "description": "The most advanced open-source database",
+      "categories": ["database"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
+      "image": "postgres:latest",
+      "env": [
+        {
+          "name": "POSTGRES_USER",
+          "label": "Superuser"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "label": "Superuser password"
+        }
+      ],
+      "ports": ["5432/tcp"],
+      "volumes": [
+        {
+          "container": "/var/lib/postgresql/data"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "Mongo",
+      "description": "Open-source document-oriented database",
+      "categories": ["database"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mongo.png",
+      "image": "mongo:latest",
+      "ports": ["27017/tcp"],
+      "volumes": [
+        {
+          "container": "/data/db"
+        }
+      ]
+    },
+  ]
+}
+}
